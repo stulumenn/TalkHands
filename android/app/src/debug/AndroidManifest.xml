@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.talkhands">
+
+    <!-- Permission for INTERNET -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- Permission for accessing network state (for connectivity purposes) -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!-- Firebase permissions (optional depending on Firebase services used) -->
+    <!-- If using Firebase Analytics or other services, add the permissions here -->
+</manifest>

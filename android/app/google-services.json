@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "980647833424",
+    "project_id": "talkhands-1efa6",
+    "storage_bucket": "talkhands-1efa6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980647833424:android:1ce9ae5cf5675aa27a4655",
+        "android_client_info": {
+          "package_name": "com.example.talkhands"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980647833424-qbipvkp3nsce6m0p9vmt4lo826t4a330.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.talkhands",
+            "certificate_hash": "87ef30880826880a4798906412e81224aa362671"
+          }
+        },
+        {
+          "client_id": "980647833424-ad3reobptlrfp5a70p859j11o00aiq59.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9Mw0NVD9yMAKG8EnF-4mzh8WlAM9fH5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980647833424-ad3reobptlrfp5a70p859j11o00aiq59.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

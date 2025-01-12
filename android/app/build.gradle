@@ -1,0 +1,54 @@
+plugins {
+    id "com.android.application"
+    id 'com.google.gms.google-services' // FlutterFire Configuration
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin" // Flutter Gradle Plugin
+}
+
+android {
+    namespace = "com.example.talkhands"
+    compileSdk = 34 // Updated to SDK 34
+
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17" // Ensure JVM target compatibility is set to Java 17
+    }
+
+    defaultConfig {
+        applicationId = "com.example.talkhands" // Replace with your app's unique ID
+        minSdkVersion 23 // Minimum SDK version
+        targetSdkVersion 34 // Updated to SDK 34
+        versionCode = flutter.versionCode.toInteger() // Flutter Version Code
+        versionName = flutter.versionName // Flutter Version Name
+    }
+
+    buildTypes {
+        release {
+            // Use debug signing config for testing; replace with release keys for production
+            signingConfig = signingConfigs.debug
+        }
+    }
+
+    buildFeatures {
+        viewBinding true // Enable View Binding if needed
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+}
+
+flutter {
+    source = "../.." // Flutter project source
+}
+
+// Apply Google Services plugin
+apply plugin: 'com.google.gms.google-services'
