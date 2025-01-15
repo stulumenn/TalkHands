@@ -3,6 +3,7 @@
 
     <!-- Permission for INTERNET -->
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <!-- Permission for accessing network state (for connectivity purposes) -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>

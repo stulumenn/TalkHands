@@ -26,7 +26,7 @@ class ProfilePage extends StatelessWidget {
                 width: double.infinity,
                 child: Column(
                   children: [
-                    const Image(image: AssetImage("lib/data/assets/images/woman.png"), width: 55),
+                    const Image(image: AssetImage("assets/images/woman.png"), width: 55),
                     TextButton(onPressed: () {}, child: const Text("Change Profile Picture"))
                   ],
                 ),

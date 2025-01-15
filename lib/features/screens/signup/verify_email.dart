@@ -22,7 +22,7 @@ class VerifyEmailScreen extends StatelessWidget {
             padding: const EdgeInsets.all(24.0),
             child: Column(
               children: [
-                const Image(image: AssetImage("lib/data/assets/images/aa8c323b10ccbcb38dc8c3aba776b90c.png")),
+                const Image(image: AssetImage("assets/images/aa8c323b10ccbcb38dc8c3aba776b90c.png")),
                 const SizedBox(height: 32.0,),
                 Text("Verify your email address!", style: TTextTheme.lightTextTheme.headlineMedium, textAlign: TextAlign.center,),
                 const SizedBox(height: 16.0,),

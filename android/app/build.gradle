@@ -1,45 +1,46 @@
 plugins {
     id "com.android.application"
-    id 'com.google.gms.google-services' // FlutterFire Configuration
+    id "com.google.gms.google-services"  // FlutterFire Configuration
     id "kotlin-android"
-    id "dev.flutter.flutter-gradle-plugin" // Flutter Gradle Plugin
+    id "dev.flutter.flutter-gradle-plugin"  // Flutter Gradle Plugin
 }
 
 android {
-    namespace = "com.example.talkhands"
-    compileSdk = 34 // Updated to SDK 34
+    namespace = "com.example.talkhands" // Ensure this matches your app's unique namespace
+    compileSdk = 34  // Updated to SDK 34
 
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = flutter.ndkVersion  // Ensures NDK version is synced with Flutter
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_17  // Ensures compatibility with Java 17
         targetCompatibility = JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = "17" // Ensure JVM target compatibility is set to Java 17
+        jvmTarget = "17"  // Ensures Kotlin compatibility with Java 17
     }
 
     defaultConfig {
-        applicationId = "com.example.talkhands" // Replace with your app's unique ID
-        minSdkVersion 23 // Minimum SDK version
-        targetSdkVersion 34 // Updated to SDK 34
-        versionCode = flutter.versionCode.toInteger() // Flutter Version Code
-        versionName = flutter.versionName // Flutter Version Name
+        applicationId = "com.example.talkhands"  // Unique application ID
+        minSdkVersion 23  // Minimum SDK version required
+        targetSdkVersion 34  // Target SDK version
+        versionCode = flutter.versionCode.toInteger()  // Flutter version code
+        versionName = flutter.versionName  // Flutter version name
     }
 
     buildTypes {
         release {
-            // Use debug signing config for testing; replace with release keys for production
+            // Debug signing config is used for testing, replace with release keys for production
             signingConfig = signingConfigs.debug
         }
     }
 
     buildFeatures {
-        viewBinding true // Enable View Binding if needed
+        viewBinding true  // Enable View Binding if needed (optional based on use case)
     }
 
     packagingOptions {
+        // Exclude unnecessary files to reduce package size and avoid conflicts
         exclude 'META-INF/DEPENDENCIES'
         exclude 'META-INF/NOTICE'
         exclude 'META-INF/LICENSE'
@@ -47,8 +48,8 @@ android {
 }
 
 flutter {
-    source = "../.." // Flutter project source
+    source = "../.."  // Ensure this path points correctly to your Flutter project source
 }
 
-// Apply Google Services plugin
+// Apply the Google Services plugin for Firebase and other services
 apply plugin: 'com.google.gms.google-services'

@@ -18,7 +18,7 @@ class SuccessScreen extends StatelessWidget {
             ),
             child: Column(
               children: [
-                const Image(image: AssetImage("lib/data/assets/images/13124789_5156366.jpg")),
+                const Image(image: AssetImage("assets/images/13124789_5156366.jpg")),
                 const SizedBox(height: 32.0,),
                 Text("Your account successfully created!", style: TTextTheme.lightTextTheme.headlineMedium, textAlign: TextAlign.center,),
                 const SizedBox(height: 16.0,),

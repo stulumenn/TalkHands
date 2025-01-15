@@ -1,18 +1,34 @@
-allprojects {
+// Kök proje için buildscript kısmı
+buildscript {
     repositories {
-        google()
-        mavenCentral()
+        google()         // Google repository
+        mavenCentral()   // Maven Central repository
+    }
+    dependencies {
+        // Android Gradle plugin ve Google services için classpath'ler
+        classpath 'com.android.tools.build:gradle:7.0.4'  // Gradle plugin sürümünü uygun şekilde güncellediğinizden emin olun
+        classpath 'com.google.gms:google-services:4.4.2'  // En son Google Services plugin sürümü
     }
 }
 
-rootProject.buildDir = "../build"
-subprojects {
-    project.buildDir = "${rootProject.buildDir}/${project.name}"
+allprojects {
+    repositories {
+        google()         // Google repository
+        mavenCentral()   // Maven Central repository
+    }
 }
+
+rootProject.buildDir = "../build"  // Root build dizinini belirleyin
+
 subprojects {
+    // Her bir alt projeye ilişkin build dizinini ayarlama
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+
+    // Uygulama projesinin bağımlılıklarını kontrol etme
     project.evaluationDependsOn(":app")
 }
 
+// Clean task'ı
 tasks.register("clean", Delete) {
-    delete rootProject.buildDir
+    delete rootProject.buildDir  // Temizleme işlemi
 }

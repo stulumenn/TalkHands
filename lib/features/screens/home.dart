@@ -6,6 +6,7 @@ import 'package:talkhands/data/theme/custom_themes/text_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
+import 'package:talkhands/features/screens/camera_page.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -36,7 +37,7 @@ class HomeScreen extends StatelessWidget {
                               children: [
                                 GestureDetector(
                                   onTap: () => Get.to(() => const ProfilePage()),
-                                  child: const Image(image: AssetImage("lib/data/assets/images/woman.png"), width: 55),
+                                  child: const Image(image: AssetImage("assets/images/woman.png"), width: 55),
                                 ),
                                 const SizedBox(width: 15),
                                 Column(
@@ -61,7 +62,7 @@ class HomeScreen extends StatelessWidget {
               children: [
                 const SizedBox(height: 200),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(() => CameraPage()),
                   style: ElevatedButton.styleFrom(
                     shape: const CircleBorder(),
                     padding: const EdgeInsets.all(60),

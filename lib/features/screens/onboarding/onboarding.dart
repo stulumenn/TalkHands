@@ -18,9 +18,9 @@ class OnBoardingScreen extends StatelessWidget {
             controller: controller.pageController,
             onPageChanged: controller.updatePageIndicator,
             children: const [
-              OnBoardingPage(image: "lib/data/assets/images/communicating-with-sign-language-free-vector.jpg", title: "Welcome To The World Of Languages", subTitle: "This app will help you to communicate without any drawbacks."),
-              OnBoardingPage(image: "lib/data/assets/images/hearing-disability-concept-free-vector.jpg", title: "This app is designed for sign language", subTitle: "By just recording yourself you can communicate easily,"),
-              OnBoardingPage(image: "lib/data/assets/images/sign-language-tutor-isolated-cartoon-600nw-2248378847.jpg.webp", title: "Come on, Let's start!", subTitle: "Click button to continue."),
+              OnBoardingPage(image: "assets/images/communicating-with-sign-language-free-vector.jpg", title: "Welcome To The World Of Languages", subTitle: "This app will help you to communicate without any drawbacks."),
+              OnBoardingPage(image: "assets/images/hearing-disability-concept-free-vector.jpg", title: "This app is designed for sign language", subTitle: "By just recording yourself you can communicate easily,"),
+              OnBoardingPage(image: "assets/images/sign-language-tutor-isolated-cartoon-600nw-2248378847.jpg.webp", title: "Come on, Let's start!", subTitle: "Click button to continue."),
             ],
           ),
           const OnBoardingSkip(),

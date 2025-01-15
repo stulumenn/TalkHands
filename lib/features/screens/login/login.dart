@@ -31,7 +31,7 @@ class LoginScreen extends StatelessWidget {
                 children: [
                   Image(
                     height: 150,
-                    image: AssetImage("lib/data/assets/logos/applogo_black_transparent.png"),  // App logo
+                    image: AssetImage("assets/logos/applogo_black_transparent.png"),  // App logo
                   ),
                   Text("Welcome",
                     style: TextStyle(
