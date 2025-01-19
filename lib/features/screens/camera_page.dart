@@ -47,7 +47,7 @@ class _CameraPageState extends State<CameraPage> {
   }
 
   void sendImageToServer(String imagePath) async {
-    final url = Uri.parse('youripaddress:5001/detect');
+    final url = Uri.parse('http://your_ip_address:5001/detect');
     final request = http.MultipartRequest('POST', url);
 
 
